@@ -1,0 +1,138 @@
+body {
+  margin: 10px;
+}
+
+.dial--wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#dial-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#dial-table td,
+#dial-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin: 0 5px;
+}
+#dial-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#dial-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/**
+ * Header Styling
+ */
+#dial-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#dial-table thead th:nth-child(1) {
+  border-top:0;
+  border-left: 0;
+}
+
+#dial-table thead th:nth-child(2),
+.dial--option[data-level='green'] .color{
+  background: rgb(217, 234, 211);
+}
+#dial-table thead th:nth-child(3),
+.dial--option[data-level='blue'] .color{
+  background: rgb(207, 226, 243);
+}
+#dial-table thead th:nth-child(4),
+.dial--option[data-level='yellow'] .color{
+  background: rgb(255, 242, 204);
+}
+#dial-table thead th:nth-child(5),
+.dial--option[data-level='orange'] .color {
+  background: rgb(252, 229, 205);
+}
+#dial-table thead th:nth-child(6),
+.dial--option[data-level='red'] .color{
+  background: rgb(224, 102, 102);
+}
+#dial-table thead th:nth-child(7),
+.dial--option[data-level='purple'] .color{
+  background: rgb(216, 191, 216);
+}
+
+#dial-table td,
+#dial-table th {
+  display: none;
+  max-width: calc(960px / 7 *3)
+}
+
+#dial-table[data-level="all"] td,
+#dial-table[data-level="all"] th {
+  display: table-cell;
+
+}
+
+#dial-table td:nth-child(1),
+#dial-table th:nth-child(1) {
+  display: table-cell;
+  width: 100px
+}
+#dial-table[data-level="green"] td:nth-child(2),
+#dial-table[data-level="green"] th:nth-child(2) {
+  display: table-cell;
+}
+#dial-table[data-level="blue"] td:nth-child(3),
+#dial-table[data-level="blue"] th:nth-child(3) {
+  display: table-cell;
+}
+#dial-table[data-level="yellow"] td:nth-child(4),
+#dial-table[data-level="yellow"] th:nth-child(4) {
+  display: table-cell;
+}
+#dial-table[data-level="orange"] td:nth-child(5),
+#dial-table[data-level="orange"] th:nth-child(5) {
+  display: table-cell;
+}
+#dial-table[data-level="red"] td:nth-child(6),
+#dial-table[data-level="red"] th:nth-child(6) {
+  display: table-cell;
+}
+#dial-table[data-level="purple"] td:nth-child(7),
+#dial-table[data-level="purple"] th:nth-child(7) {
+  display: table-cell;
+}
+
+/**
+ * Cell Styling
+ */
+#dial-table td:first-child {
+  font-weight: bold;
+}
+
+#dial {
+  margin: 20px auto;
+  max-width: 450px;
+}
+
+.dial--option {
+  text-align: center;
+}
+
+.dial--option[data-level="all"] {
+  display: inline;
+  text-align: right;
+  width: 100%;
+  padding: 2px 0;
+  border: 0;
+}
+
+.dial--option.active {
+  stroke: #333;
+  stroke-width: 2;
+}
