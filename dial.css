@@ -115,9 +115,9 @@ body {
   font-weight: bold;
 }
 
-#dial {
-  margin: 20px auto;
+.dial--container {
   max-width: 450px;
+  margin: 20px auto;
 }
 
 .dial--option {

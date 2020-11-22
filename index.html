@@ -1,292 +1,296 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <link href="./dial.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dial.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    </head>
 <body>
 
-<div class="dial--wrapper">
-    <div id="dial"></div>
+    <div class="dial--wrapper">
+        <div class="dial--container">
+            <div id="dial"></div>
 
-    <div data-level="all" class="dial--option">
-        <div class="">Show All</div>
-    </div>
-    <table id="dial-table" data-level="all">
-        <thead>
-            <tr>
-                <th></th>
-                <th class="level-green">Level Green:<br/> Protect Our Neighbors</th>
-                <th class="level-blue">Level Blue:<br/> Caution</th>
-                <th class="level-yellow">Level Yellow:<br/> Concern</th>
-                <th class="level-orange">Level Orange:<br/> High Risk</th>
-                <th class="level-red">Level Red:<br/> Severe Risk</th>
-                <th class="level-purple">Level Purple:<br/> Extreme Risk</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> High Risk Populations</td>
-                <td>
-                    Use caution<br/><br/>
+            <div data-level="all" class="dial--option">
+                <div class="">Show All</div>
+            </div>
+        </div>
+        <table id="dial-table" data-level="all">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="level-green">Level Green:<br/> Protect Our Neighbors</th>
+                    <th class="level-blue">Level Blue:<br/> Caution</th>
+                    <th class="level-yellow">Level Yellow:<br/> Concern</th>
+                    <th class="level-orange">Level Orange:<br/> High Risk</th>
+                    <th class="level-red">Level Red:<br/> Severe Risk</th>
+                    <th class="level-purple">Level Purple:<br/> Extreme Risk</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> High Risk Populations</td>
+                    <td>
+                        Use caution<br/><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-                <td>
-                    Use caution <br /><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                    <td>
+                        Use caution <br /><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-                <td>
-                    Advised to Stay at Home <br /><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                    <td>
+                        Advised to Stay at Home <br /><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-                <td>
-                    Strongly advised to Stay at Home<br /><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                    <td>
+                        Strongly advised to Stay at Home<br /><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-                <td>
-                    Stay at Home<br/><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                    <td>
+                        Stay at Home<br/><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-                <td>
-                    Stay at Home Ordered<br/><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                    <td>
+                        Stay at Home Ordered<br/><br/>
 
-                    Eligible for worker benefits and mandatory prioritization for remote work
-                </td>
-            </tr>
-            <tr>
-                <td>Variances</td>
-                <td>Eligible for both site-specific variances if approved by LPHA</td>
-                <td>Eligible for both site-specific variances if approved by LPHA</td>
-                <td>Eligible for site-specific variances if approved by LPHA</td>
-                <td>Not eligible</td>
-                <td>Not eligible - current variances reevaluated</td>
-                <td>Not eligible - Current variances revoked unless specifically allowed</td>
-            </tr>
-            <tr>
-                <td> Personal Gathering Size</td>
-                <td>Per local guidance</td>
-                <td>Up to 10 from no more than 2 households</td>
-                <td>Up to 10 from no more than 2 households</td>
-                <td>Up to 10 from no more than 2 households</td>
-                <td>None</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Childcare</td>
-                <td>Open</td>
-                <td>Open</td>
-                <td>Open</td>
-                <td>Open</td>
-                <td>Open</td>
-                <td>Open</td>
-            </tr>
-            <tr>
-                <td>P-12 Schools</td>
-                <td>In-person</td>
-                <td>In-person</td>
-                <td>In-person suggested, hybrid, or remote as appropriate</td>
-                <td>In-person suggested, hybrid,or remote as appropriate</td>
-                <td>
-                    P-5 in person suggested, or hybrid or remote as appropriate <br/><br/>
+                        Eligible for worker benefits and mandatory prioritization for remote work
+                    </td>
+                </tr>
+                <tr>
+                    <td>Variances</td>
+                    <td>Eligible for both site-specific variances if approved by LPHA</td>
+                    <td>Eligible for both site-specific variances if approved by LPHA</td>
+                    <td>Eligible for site-specific variances if approved by LPHA</td>
+                    <td>Not eligible</td>
+                    <td>Not eligible - current variances reevaluated</td>
+                    <td>Not eligible - Current variances revoked unless specifically allowed</td>
+                </tr>
+                <tr>
+                    <td> Personal Gathering Size</td>
+                    <td>Per local guidance</td>
+                    <td>Up to 10 from no more than 2 households</td>
+                    <td>Up to 10 from no more than 2 households</td>
+                    <td>Up to 10 from no more than 2 households</td>
+                    <td>None</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Childcare</td>
+                    <td>Open</td>
+                    <td>Open</td>
+                    <td>Open</td>
+                    <td>Open</td>
+                    <td>Open</td>
+                    <td>Open</td>
+                </tr>
+                <tr>
+                    <td>P-12 Schools</td>
+                    <td>In-person</td>
+                    <td>In-person</td>
+                    <td>In-person suggested, hybrid, or remote as appropriate</td>
+                    <td>In-person suggested, hybrid,or remote as appropriate</td>
+                    <td>
+                        P-5 in person suggested, or hybrid or remote as appropriate <br/><br/>
 
-                    Middle school in-person, hybrid,&nbsp; or remote suggested,<br/><br/>
+                        Middle school in-person, hybrid,&nbsp; or remote suggested,<br/><br/>
 
-                    High school hybrid or remote suggested
-                </td>
-                <td>In-person, hybrid, or remote as appropriate</td>
-            </tr>
-            <tr>
-                <td>Higher Education</td>
-                <td>In-person</td>
-                <td>In-person</td>
-                <td>In-person, hybrid, or remote as appropriate</td>
-                <td>In-person, hybrid, or remote as appropriate&nbsp;</td>
-                <td>Remote suggested, limited in-person when necessary</td>
-                <td>Remote suggested, very limited in-person when necessary</td>
-            </tr>
-            <tr>
-                <td>Places of Worship and Life Rites - Indoor unseated functions</td>
-                <td>50%*, 500</td>
-                <td>50%, 175 people</td>
-                <td>50%, 50 no calculator, or up to 100 with calculator</td>
-                <td>25%, 50 (with calculator)</td>
-                <td>25%, 50 (with calculator)</td>
-                <td> Remote, virtual service, or outdoor are strongly encouraged; indoors up to 10</td>
-            </tr>
-            <tr>
-                <td>Places of Worship and Life Rites - Indoor seated functions</td>
-                <td>50%*, 500</td>
-                <td>50%, 175 person cap</td>
-                <td>50%, 100 person cap</td>
-                <td>25%, 50 person cap</td>
-                <td>25%, 50 person cap</td>
-                <td> Remote, virtual service, or outdoor are strongly encouraged; indoors up to 10</td>
-            </tr>
-            <tr>
-                <td>Places of Worship and Life Rites - Outdoors</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-                <td>6ft between parties outdoors, per local zoning</td>
-            </tr>
-            <tr>
-                <td>Restaurants</td>
-                <td>50%*, 500 <br />
-                    &gt;6ft between parties outdoors per guidance
+                        High school hybrid or remote suggested
+                    </td>
+                    <td>In-person, hybrid, or remote as appropriate</td>
+                </tr>
+                <tr>
+                    <td>Higher Education</td>
+                    <td>In-person</td>
+                    <td>In-person</td>
+                    <td>In-person, hybrid, or remote as appropriate</td>
+                    <td>In-person, hybrid, or remote as appropriate&nbsp;</td>
+                    <td>Remote suggested, limited in-person when necessary</td>
+                    <td>Remote suggested, very limited in-person when necessary</td>
+                </tr>
+                <tr>
+                    <td>Places of Worship and Life Rites - Indoor unseated functions</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 175 people</td>
+                    <td>50%, 50 no calculator, or up to 100 with calculator</td>
+                    <td>25%, 50 (with calculator)</td>
+                    <td>25%, 50 (with calculator)</td>
+                    <td> Remote, virtual service, or outdoor are strongly encouraged; indoors up to 10</td>
+                </tr>
+                <tr>
+                    <td>Places of Worship and Life Rites - Indoor seated functions</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 175 person cap</td>
+                    <td>50%, 100 person cap</td>
+                    <td>25%, 50 person cap</td>
+                    <td>25%, 50 person cap</td>
+                    <td> Remote, virtual service, or outdoor are strongly encouraged; indoors up to 10</td>
+                </tr>
+                <tr>
+                    <td>Places of Worship and Life Rites - Outdoors</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                    <td>6ft between parties outdoors, per local zoning</td>
+                </tr>
+                <tr>
+                    <td>Restaurants</td>
+                    <td>50%*, 500 <br />
+                        &gt;6ft between parties outdoors per guidance
 
-                </td>
-                <td>50%, 175 indoors <br/>
+                    </td>
+                    <td>50%, 175 indoors <br/>
 
-                    &gt;6ft between parties outdoors per guidance
-                </td>
-                <td>50%, 50 (or up to 100 with calculator)<br/>
+                        &gt;6ft between parties outdoors per guidance
+                    </td>
+                    <td>50%, 50 (or up to 100 with calculator)<br/>
 
-                    &gt;6ft between parties outdoors per guidance
-                </td>
-                <td>25%, 50<br/>
+                        &gt;6ft between parties outdoors per guidance
+                    </td>
+                    <td>25%, 50<br/>
 
-                    &gt;6ft between parties outdoors per guidance
-                </td>
-                <td>Indoor dining closed. Take out, curbside, delivery, or to go, outdoor/open air with only groups of own
-                    household is open.</td>
-                <td>Indoor and outdoor dining closed. Take out, delivery, or to go is open.</td>
-            </tr>
-            <tr>
-                <td>Last Call</td>
-                <td>Per local</td>
-                <td>12pm (on premise)</td>
-                <td>11pm (on premise)</td>
-                <td>10pm (on premise)</td>
-                <td>8pm (on premise)</td>
-                <td>No on premise service</td>
-            </tr>
-            <tr>
-                <td>Non-Critical&nbsp; Manufacturing</td>
-                <td>50%*, 500</td>
-                <td>50%, 175</td>
-                <td>50%, 50 (or up to 100 with calculator)</td>
-                <td>25%, 50</td>
-                <td>25%, 50</td>
-                <td>10%/25</td>
-            </tr>
-            <tr>
-                <td>Offices</td>
-                <td>50%*</td>
-                <td>50%</td>
-                <td>50%, Remote work is strongly encouraged</td>
-                <td>25%, Remote work is strongly encouraged</td>
-                <td>10%, Remote work is strongly encouraged&nbsp;</td>
-                <td>Remote work or Closed</td>
-            </tr>
-            <tr>
-                <td>Bars</td>
-                <td>50%*, 500</td>
-                <td>Closed</td>
-                <td>Closed</td>
-                <td>Closed</td>
-                <td>Closed</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Gyms/Fitness</td>
-                <td>50%*, 500</td>
-                <td>25%, 75</td>
-                <td>25%, 50</td>
-                <td>25%, 25 indoors, or outdoors in groups less than 10</td>
-                <td>10%, 10 indoors per room, or outdoors in groups less than 10. Reservations required</td>
-                <td>Virtual, or outdoors in groups less than 10</td>
-            </tr>
-            <tr>
-                <td>Group Sports and Camps</td>
-                <td>50%*, 500</td>
-                <td>50 person cap per activity</td>
-                <td>25 person cap per activity</td>
-                <td>Virtual, or outdoors in groups less than 10</td>
-                <td>Virtual, or outdoors in groups less than 10</td>
-                <td>Virtual, or outdoors in groups less than 10</td>
-            </tr>
-            <tr>
-                <td>Critical and Non Critical Retail</td>
-                <td>50%*</td>
-                <td>50%</td>
-                <td>50%</td>
-                <td>50% with increased curbside pick up, and delivery. Dedicated senior and at-risk hours encouraged.</td>
-                <td>50% with increased curbside pick up, and delivery. Dedicated senior and at-risk hours encouraged.</td>
-                <td>Curbside, pick up, and delivery</td>
-            </tr>
-            <tr>
-                <td>Personal Services</td>
-                <td>50%*, 500</td>
-                <td>50%, 50</td>
-                <td>50%, 50</td>
-                <td>25%, 25</td>
-                <td>25%, 25</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Limited Health Care Settings</td>
-                <td>50%*, 500</td>
-                <td>50%, 50</td>
-                <td>50%, 50</td>
-                <td>25%, 25</td>
-                <td>25%, 25</td>
-                <td>10%, 25</td>
-            </tr>
-            <tr>
-                <td>Indoor Unseated Events</td>
-                <td>50%*, 500</td>
-                <td>50%, 175 person cap</td>
-                <td>50%, 50 no calculator, (or up to 100 with calculator)</td>
-                <td>25%, 50 person cap (with calculator)</td>
-                <td>Closed</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Indoor Seated Events and Entertainment</td>
-                <td>50%*, 500</td>
-                <td>50%, 175 person cap</td>
-                <td>50%, 100 person cap (6ft distancing between parties)</td>
-                <td>25%, 50 person cap (6ft distancing between parties)</td>
-                <td>Closed</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Outdoor Unseated Events and Entertainment</td>
-                <td>50%*, 500</td>
-                <td>50%, 250 person cap</td>
-                <td>50%, 175 person cap (with calculator)</td>
-                <td> 25%, 75 person cap (with calculator)</td>
-                <td>25%, 75 people (with calculator), attended only with members of your own household and 6ft spacing between groups</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Outdoor Seated Events and Entertainment</td>
-                <td>50%*, 500</td>
-                <td>50%, 250 person cap</td>
-                <td>50%, 175 person cap (6ft distancing between parties)</td>
-                <td>25%, 75 person cap (6ft distancing between parties)</td>
-                <td>25%, 75 people (6ft distancing between parties), attended only with members of your own household and 6ft spacing between groups</td>
-                <td>Closed</td>
-            </tr>
-            <tr>
-                <td>Outdoor Guided Services&nbsp; and Entertainment</td>
-                <td>50%*, 500</td>
-                <td>50%, 25</td>
-                <td>50%, 10</td>
-                <td>25%, 10</td>
-                <td>25%, 10</td>
-                <td>25%, up to 10 only in your own household</td>
-            </tr>
-            </tbody>
-        </table>
-        <p>* Counties that enter Protect Our Neighbors are eligible to increase the percentage caps by 5% every month they continually sustain those metrics.</p>
-    </div>
-    <script src="./dial.js"></script>
-</body>
+                        &gt;6ft between parties outdoors per guidance
+                    </td>
+                    <td>Indoor dining closed. Take out, curbside, delivery, or to go, outdoor/open air with only groups of own
+                        household is open.</td>
+                    <td>Indoor and outdoor dining closed. Take out, delivery, or to go is open.</td>
+                </tr>
+                <tr>
+                    <td>Last Call</td>
+                    <td>Per local</td>
+                    <td>12pm (on premise)</td>
+                    <td>11pm (on premise)</td>
+                    <td>10pm (on premise)</td>
+                    <td>8pm (on premise)</td>
+                    <td>No on premise service</td>
+                </tr>
+                <tr>
+                    <td>Non-Critical&nbsp; Manufacturing</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 175</td>
+                    <td>50%, 50 (or up to 100 with calculator)</td>
+                    <td>25%, 50</td>
+                    <td>25%, 50</td>
+                    <td>10%/25</td>
+                </tr>
+                <tr>
+                    <td>Offices</td>
+                    <td>50%*</td>
+                    <td>50%</td>
+                    <td>50%, Remote work is strongly encouraged</td>
+                    <td>25%, Remote work is strongly encouraged</td>
+                    <td>10%, Remote work is strongly encouraged&nbsp;</td>
+                    <td>Remote work or Closed</td>
+                </tr>
+                <tr>
+                    <td>Bars</td>
+                    <td>50%*, 500</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Gyms/Fitness</td>
+                    <td>50%*, 500</td>
+                    <td>25%, 75</td>
+                    <td>25%, 50</td>
+                    <td>25%, 25 indoors, or outdoors in groups less than 10</td>
+                    <td>10%, 10 indoors per room, or outdoors in groups less than 10. Reservations required</td>
+                    <td>Virtual, or outdoors in groups less than 10</td>
+                </tr>
+                <tr>
+                    <td>Group Sports and Camps</td>
+                    <td>50%*, 500</td>
+                    <td>50 person cap per activity</td>
+                    <td>25 person cap per activity</td>
+                    <td>Virtual, or outdoors in groups less than 10</td>
+                    <td>Virtual, or outdoors in groups less than 10</td>
+                    <td>Virtual, or outdoors in groups less than 10</td>
+                </tr>
+                <tr>
+                    <td>Critical and Non Critical Retail</td>
+                    <td>50%*</td>
+                    <td>50%</td>
+                    <td>50%</td>
+                    <td>50% with increased curbside pick up, and delivery. Dedicated senior and at-risk hours encouraged.</td>
+                    <td>50% with increased curbside pick up, and delivery. Dedicated senior and at-risk hours encouraged.</td>
+                    <td>Curbside, pick up, and delivery</td>
+                </tr>
+                <tr>
+                    <td>Personal Services</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 50</td>
+                    <td>50%, 50</td>
+                    <td>25%, 25</td>
+                    <td>25%, 25</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Limited Health Care Settings</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 50</td>
+                    <td>50%, 50</td>
+                    <td>25%, 25</td>
+                    <td>25%, 25</td>
+                    <td>10%, 25</td>
+                </tr>
+                <tr>
+                    <td>Indoor Unseated Events</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 175 person cap</td>
+                    <td>50%, 50 no calculator, (or up to 100 with calculator)</td>
+                    <td>25%, 50 person cap (with calculator)</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Indoor Seated Events and Entertainment</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 175 person cap</td>
+                    <td>50%, 100 person cap (6ft distancing between parties)</td>
+                    <td>25%, 50 person cap (6ft distancing between parties)</td>
+                    <td>Closed</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Outdoor Unseated Events and Entertainment</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 250 person cap</td>
+                    <td>50%, 175 person cap (with calculator)</td>
+                    <td> 25%, 75 person cap (with calculator)</td>
+                    <td>25%, 75 people (with calculator), attended only with members of your own household and 6ft spacing between groups</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Outdoor Seated Events and Entertainment</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 250 person cap</td>
+                    <td>50%, 175 person cap (6ft distancing between parties)</td>
+                    <td>25%, 75 person cap (6ft distancing between parties)</td>
+                    <td>25%, 75 people (6ft distancing between parties), attended only with members of your own household and 6ft spacing between groups</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Outdoor Guided Services&nbsp; and Entertainment</td>
+                    <td>50%*, 500</td>
+                    <td>50%, 25</td>
+                    <td>50%, 10</td>
+                    <td>25%, 10</td>
+                    <td>25%, 10</td>
+                    <td>25%, up to 10 only in your own household</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>* Counties that enter Protect Our Neighbors are eligible to increase the percentage caps by 5% every month they continually sustain those metrics.</p>
+        </div>
+        <script src="./dial.js"></script>
+    </body>
 </html>

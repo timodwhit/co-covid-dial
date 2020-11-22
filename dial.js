@@ -9,7 +9,7 @@ var margin = {left: 40, top: 20, right: 60, bottom: 20},
 
 var svg = d3.select("#dial").append("svg")
   .attr("width", (width + margin.left + margin.right))
-  .attr("height", 250)
+  .attr("height", height / 2 + 30)
   .attr("id", "dial-graphic")
   .append("g").attr("class", "wrapper")
   .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
